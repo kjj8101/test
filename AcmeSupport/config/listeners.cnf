@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="listeners" javaclass="com.wm.util.Values">
+    <record name="EmailListener:imap:integration-server@company.com@localhost" javaclass="com.wm.util.Values">
+      <value name="port">-1</value>
+      <value name="protocol">Email</value>
+      <value name="pkg">AcmeSupport</value>
+      <value name="enabled">false</value>
+      <value name="key">EmailListener:imap:integration-server@company.com@localhost</value>
+      <value name="factoryKey">webMethods/Email</value>
+      <value name="configURL">/WmRoot/configEmail.dsp</value>
+      <value name="provider">webMethods</value>
+      <value name="host">localhost</value>
+      <value name="user">integration-server@company.com</value>
+      <value name="type">imap</value>
+      <value name="interval">300</value>
+      <value name="num_threads">0</value>
+      <value name="gservice"></value>
+      <value name="dservice"></value>
+      <value name="remove">yes</value>
+      <value name="bad_remove">yes</value>
+      <value name="break_mmsg">yes</value>
+      <value name="urlEncodedBody">yes</value>
+      <value name="includeHdrs">no</value>
+      <value name="reply">yes</value>
+      <value name="replyonerr">yes</value>
+      <value name="multithread">no</value>
+      <value name="logout">no</value>
+      <value name="authorize">no</value>
+      <value name="runuser">Administrator</value>
+      <value name="tlsSettings">None</value>
+      <value name="trustStore"></value>
+      <value name="handle">wm.is.admin.listenMgr.EmailListener:imap:integration-server@company.com@localhost</value>
+    </record>
+  </record>
+  <record name="access" javaclass="com.wm.util.Values">
+    <record name="EmailListener:imap:integration-server@company.com@localhost" javaclass="com.wm.util.Values">
+      <null name="home"/>
+      <value name="default">include</value>
+      <record name="nodes" javaclass="com.wm.util.StringSet">
+        <list name="elements">
+        </list>
+      </record>
+      <value name="key">EmailListener:imap:integration-server@company.com@localhost</value>
+    </record>
+  </record>
+</Values>

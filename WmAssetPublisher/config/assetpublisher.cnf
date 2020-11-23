@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <value name="is_hostname">DESKTOP-5LMPR87.mshome.net</value>
+    <value name="is_identifier">cf46f22b-ed7f-49df-b35c-20f9a75856c5</value>
+    <value name="library_username"></value>
+    <value name="library_url"></value>
+  </record>
+</IDataXMLCoder>

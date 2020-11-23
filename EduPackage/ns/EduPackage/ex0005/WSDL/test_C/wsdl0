@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="test_P" targetNamespace="http://DESKTOP-5LMPR87/EduPackage.ex0004.WSDL:test_P" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://DESKTOP-5LMPR87/EduPackage.ex0004.WSDL:test_P" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://DESKTOP-5LMPR87/EduPackage.ex0004.WSDL:test_P" xmlns:tns="http://DESKTOP-5LMPR87/EduPackage.ex0004.WSDL:test_P" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <xsd:element name="Test_svc" type="tns:Test_svc"/>
+          <xsd:element name="Test_svcResponse" type="tns:Test_svcResponse"/>
+          <xsd:complexType name="Test_svc">
+            <xsd:sequence>
+              <xsd:element name="INPUT1" nillable="true" type="xsd:string"/>
+              <xsd:element name="INPUT2" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="Test_svcResponse">
+            <xsd:sequence>
+              <xsd:element name="OUTPUT" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="test_P_PortType_Test_svcResponse">
+    <wsdl:part name="parameters" element="tns:Test_svcResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="test_P_PortType_Test_svc">
+    <wsdl:part name="parameters" element="tns:Test_svc">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="test_P_PortType">
+    <wsdl:operation name="Test_svc">
+      <wsdl:input message="tns:test_P_PortType_Test_svc">
+    </wsdl:input>
+      <wsdl:output message="tns:test_P_PortType_Test_svcResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EduPackage_ex0004_WSDL_test_P_Binder" type="tns:test_P_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Test_svc">
+      <soap:operation soapAction="EduPackage_ex0004_WSDL_test_P_Binder_Test_svc" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EduPackage.ex0004.WSDL.test_P">
+    <wsdl:port name="EduPackage_ex0004_WSDL_test_P_Port" binding="tns:EduPackage_ex0004_WSDL_test_P_Binder">
+      <soap:address location="http://DESKTOP-5LMPR87:5555/ws/EduPackage.ex0004.WSDL:test_P/EduPackage_ex0004_WSDL_test_P_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

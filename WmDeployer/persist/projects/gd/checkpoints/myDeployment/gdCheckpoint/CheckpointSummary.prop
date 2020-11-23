@@ -1,0 +1,10 @@
+#
+#Mon Jul 06 13:46:29 KST 2020
+Status=3
+Name=gdCheckpoint
+DeploymentCandidate=myDeployment
+Timestamp=1594010789549
+SizeOnDisk=3259
+Project=gd
+Description=TBD
+User=Administrator

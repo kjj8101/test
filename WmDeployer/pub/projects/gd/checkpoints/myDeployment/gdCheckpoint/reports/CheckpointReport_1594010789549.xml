@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="deploySimulateRollback.xsl"?><Report projectType="Runtime" status="2" type="Checkpoint">
+<depCandidate>myDeployment</depCandidate>
+<depMapName>myDeploymentMap</depMapName>
+<buildName>myBuild</buildName>
+<checkpointName>gdCheckpoint</checkpointName>
+<projectDescription>xg</projectDescription>
+<startTime>Mon Jul 06 13:46:29 KST 2020</startTime>
+<projectName>gd</projectName>
+<user>Administrator</user>
+<messages>
+<message timeStamp="2020-07-06 13:46:29 KST" type="ERROR">
+<messagebody>[DEP.0001.0130] The  Target Server/Group local is not currently available; skipping that Target Server/Group.  Check your network connection, and verify that the Target Server/Group is running.</messagebody>
+<attributes>
+<set mode="Deploy" name="myDeploymentSet" type="IS"/>
+<targetserver name="local"/>
+</attributes>
+</message>
+</messages>
+<endTime>2020-07-06 13:46:29 KST</endTime>
+</Report>

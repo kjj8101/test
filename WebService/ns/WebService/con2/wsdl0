@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="p2" targetNamespace="http://DESKTOP-5LMPR87/WebService:p2" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://DESKTOP-5LMPR87/WebService:p2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://DESKTOP-5LMPR87/WebService:p2" xmlns:tns="http://DESKTOP-5LMPR87/WebService:p2" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <xsd:element name="WebServiceSRC" type="tns:WebServiceSRC"/>
+          <xsd:element name="WebServiceSRCResponse" type="tns:WebServiceSRCResponse"/>
+          <xsd:complexType name="WebServiceSRC">
+            <xsd:sequence>
+              <xsd:element name="NUM1" nillable="true" type="xsd:string"/>
+              <xsd:element name="NUM2" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="WebServiceSRCResponse">
+            <xsd:sequence>
+              <xsd:element name="Value" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="p2_PortType_WebServiceSRCResponse">
+    <wsdl:part name="parameters" element="tns:WebServiceSRCResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="p2_PortType_WebServiceSRC">
+    <wsdl:part name="parameters" element="tns:WebServiceSRC">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="p2_PortType">
+    <wsdl:operation name="WebServiceSRC">
+      <wsdl:input message="tns:p2_PortType_WebServiceSRC">
+    </wsdl:input>
+      <wsdl:output message="tns:p2_PortType_WebServiceSRCResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService_p2_Binder" type="tns:p2_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="WebServiceSRC">
+      <soap:operation soapAction="WebService_p2_Binder_WebServiceSRC" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService.p2">
+    <wsdl:port name="WebService_p2_Port" binding="tns:WebService_p2_Binder">
+      <soap:address location="http://DESKTOP-5LMPR87:5555/ws/WebService:p2/WebService_p2_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

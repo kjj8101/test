@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="deploySimulateRollback.xsl"?><Report projectType="Runtime" status="2" type="Deploy">
+<depCandidate>myDeployment</depCandidate>
+<depMapName>myDeploymentMap</depMapName>
+<buildName>myBuild</buildName>
+<projectDescription>xg</projectDescription>
+<startTime>2020-07-06 13:46:32 KST</startTime>
+<projectName>gd</projectName>
+<user>Administrator</user>
+<messages>
+<message timeStamp="2020-07-06 13:46:32 KST" type="ERROR">
+<messagebody>[DEP.0005.0304] Target Server local is unavailable.</messagebody>
+<attributes>
+<set mode="Deploy" name="myDeploymentSet" type="IS"/>
+<targetserver name="local"/>
+<asset name="" type=""/>
+</attributes>
+</message>
+</messages>
+<endTime>2020-07-06 13:46:32 KST</endTime>
+</Report>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="record" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="node_nsName">Adapter:InsertNotiPublishDocument</value>
+    <value name="node_pkg">WebService</value>
+    <record name="node_hints" javaclass="com.wm.util.Values">
+      <value name="NotificationDocument"></value>
+      <null name="CURRENT_NODE"/>
+    </record>
+    <value name="is_public">false</value>
+    <value name="field_name">InsertNotiPublishDocument</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <number name="nanostamp" type="Long">5451830209900</number>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">NUM1</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <number name="protobufKey" type="Integer">1</number>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">NUM2</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <number name="protobufKey" type="Integer">3</number>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">_env</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <number name="protobufKey" type="Integer">536870910</number>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">pub.publish:envelope</value>
+      </record>
+    </array>
+    <record name="eventDescription" javaclass="com.wm.util.Values">
+      <value name="brokerEventTypeName">wm::offline::Adapter::InsertNotiPublishDocument</value>
+      <value name="timeToLive">0</value>
+      <value name="storageType">guaranteed</value>
+      <value name="clientValidation">true</value>
+      <Boolean name="enableProtoBuf">true</Boolean>
+      <byte name="protoBufDescriptor">
+CqIHCjJJbnNlcnROb3RpUHVibGlzaERvY3VtZW50NzMwODQwNzA0MDA3NDI0OTQ0MS5wcm90byJYCiFBZGFwdGVyX0luc2VydE5vdGlQdWJsaXNoRG9jdW1lbnQSDAoETlVNMRgBIAEoCRIMCgROVU0yGAMgASgJEhcKBF9lbnYY/v///wEgASgLMgUuX2VudiLMBQoEX2VudhISCgphY3RpdmF0aW9uGAEgASgJEhMKC2FwcExhc3RTZXFuGAIgASgFEhMKC2FwcFBhc3N3b3JkGAMgASgJEg8KB2FwcFNlcW4YBCABKAUSEwoLYXBwVXNlck5hbWUYBSABKAkSEAoIcHJpb3JpdHkYBiABKAUSFwoPYnVzaW5lc3NDb250ZXh0GAcgASgJEhQKDGNvbnRyb2xMYWJlbBgIIAMoBRIQCghlcnJvcnNUbxgJIAEoCRIXCg9lcnJvclJlcXVlc3RzVG8YCiABKAkSDgoGbG9jYWxlGAsgASgJEhIKCm1heFJlc3VsdHMYDCABKAUSDwoHcmVwbHlUbxgNIAEoCRIQCghydW5MZXZlbBgOIAEoBRIRCglzaWduYXR1cmUYDyABKAwSFQoNc2lnbmF0dXJlVHlwZRgQIAEoCRITCgtzdGFydFJlc3VsdBgRIAEoBRILCgN0YWcYEiABKAUSDwoHdHJhY2tJZBgTIAEoCRIVCg10cmFuc2FjdGlvbklkGBQgASgJEhYKDnRyYW5zZm9ybVN0YXRlGBUgASgJEgsKA2FnZRgWIAEoBRIbChNjb25uZWN0aW9uSW50ZWdyaXR5GBcgASgJEg4KBmRlc3RJZBgYIAEoCRITCgtlbnF1ZXVlVGltZRgZIAEoAxIRCglsb2dCcm9rZXIYGiABKAkSDwoHbG9nSG9zdBgbIAEoCRIcChRwdWJEaXN0aW5ndWlzaGVkTmFtZRgcIAEoCRINCgVwdWJJZBgdIAEoCRISCgpwdWJOZXRBZGRyGB4gASgMEg8KB3B1YlNlcW4YHyABKAMSEAoIcHViTGFiZWwYICADKAUSEAoIcmVjdlRpbWUYISABKAMSGgoFcm91dGUYIiADKAsyCy5fZW52X3JvdXRlEgwKBHV1aWQYIyABKAkSDgoGc3RhdHVzGCQgASgJIkMKCl9lbnZfcm91dGUSDgoGYnJva2VyGAEgASgJEhAKCHJlY3ZUaW1lGAIgASgDEhMKC2VucXVldWVUaW1lGAMgASgD      </byte>
+    </record>
+    <value name="modifiable">true</value>
+    <number name="lastProtobufKey" type="Integer">3</number>
+    <Boolean name="enableProtoBuf">true</Boolean>
+    <byte name="protoBufDescriptor">
+CqIHCjJJbnNlcnROb3RpUHVibGlzaERvY3VtZW50NzMwODQwNzA0MDA3NDI0OTQ0MS5wcm90byJYCiFBZGFwdGVyX0luc2VydE5vdGlQdWJsaXNoRG9jdW1lbnQSDAoETlVNMRgBIAEoCRIMCgROVU0yGAMgASgJEhcKBF9lbnYY/v///wEgASgLMgUuX2VudiLMBQoEX2VudhISCgphY3RpdmF0aW9uGAEgASgJEhMKC2FwcExhc3RTZXFuGAIgASgFEhMKC2FwcFBhc3N3b3JkGAMgASgJEg8KB2FwcFNlcW4YBCABKAUSEwoLYXBwVXNlck5hbWUYBSABKAkSEAoIcHJpb3JpdHkYBiABKAUSFwoPYnVzaW5lc3NDb250ZXh0GAcgASgJEhQKDGNvbnRyb2xMYWJlbBgIIAMoBRIQCghlcnJvcnNUbxgJIAEoCRIXCg9lcnJvclJlcXVlc3RzVG8YCiABKAkSDgoGbG9jYWxlGAsgASgJEhIKCm1heFJlc3VsdHMYDCABKAUSDwoHcmVwbHlUbxgNIAEoCRIQCghydW5MZXZlbBgOIAEoBRIRCglzaWduYXR1cmUYDyABKAwSFQoNc2lnbmF0dXJlVHlwZRgQIAEoCRITCgtzdGFydFJlc3VsdBgRIAEoBRILCgN0YWcYEiABKAUSDwoHdHJhY2tJZBgTIAEoCRIVCg10cmFuc2FjdGlvbklkGBQgASgJEhYKDnRyYW5zZm9ybVN0YXRlGBUgASgJEgsKA2FnZRgWIAEoBRIbChNjb25uZWN0aW9uSW50ZWdyaXR5GBcgASgJEg4KBmRlc3RJZBgYIAEoCRITCgtlbnF1ZXVlVGltZRgZIAEoAxIRCglsb2dCcm9rZXIYGiABKAkSDwoHbG9nSG9zdBgbIAEoCRIcChRwdWJEaXN0aW5ndWlzaGVkTmFtZRgcIAEoCRINCgVwdWJJZBgdIAEoCRISCgpwdWJOZXRBZGRyGB4gASgMEg8KB3B1YlNlcW4YHyABKAMSEAoIcHViTGFiZWwYICADKAUSEAoIcmVjdlRpbWUYISABKAMSGgoFcm91dGUYIiADKAsyCy5fZW52X3JvdXRlEgwKBHV1aWQYIyABKAkSDgoGc3RhdHVzGCQgASgJIkMKCl9lbnZfcm91dGUSDgoGYnJva2VyGAEgASgJEhAKCHJlY3ZUaW1lGAIgASgDEhMKC2VucXVldWVUaW1lGAMgASgD    </byte>
+  </record>
+</Values>

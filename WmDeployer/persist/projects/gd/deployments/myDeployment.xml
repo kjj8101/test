@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_181" class="java.beans.XMLDecoder">
+ <object class="com.wm.deployer.deploy.Deployment" id="Deployment0">
+  <void property="auditReports">
+   <void method="add">
+    <string>packages\WmDeployer\pub\projects\gd\targets\myDeploymentMap\reports\myDeploymentMap_auditReport_1594010792547.xml</string>
+   </void>
+  </void>
+  <void property="beginTimestamp">
+   <string>2020-07-06 13:46:32 KST</string>
+  </void>
+  <void property="buildName">
+   <string>myBuild</string>
+  </void>
+  <void property="checkpointReports">
+   <void method="add">
+    <string>C:\SoftwareAG103_edu\IntegrationServer\instances\default\packages\WmDeployer\pub\projects\gd\checkpoints\myDeployment\gdCheckpoint\reports\CheckpointReport_1594010789549.xml</string>
+   </void>
+  </void>
+  <void property="deployed">
+   <boolean>true</boolean>
+  </void>
+  <void property="deploymentId">
+   <string>f4751fa5-a886-4f91-a413-78e037471216</string>
+  </void>
+  <void property="deploymentMapName">
+   <string>myDeploymentMap</string>
+  </void>
+  <void property="description">
+   <string></string>
+  </void>
+  <void property="dummyReports">
+   <void method="add">
+    <string>packages\WmDeployer\pub\projects\gd\targets\myDeploymentMap\reports\deploySimulateRollback.xsl</string>
+   </void>
+   <void method="add">
+    <string>packages\WmDeployer\pub\projects\gd\targets\myDeploymentMap\reports\myDeploymentMap_auditReport_1594010792547.html</string>
+   </void>
+  </void>
+  <void property="name">
+   <string>myDeployment</string>
+  </void>
+  <void property="projectName">
+   <string>gd</string>
+  </void>
+  <void property="user">
+   <string>Administrator</string>
+  </void>
+  <void property="version">
+   <string>1.0</string>
+  </void>
+ </object>
+</java>

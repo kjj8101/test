@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_181" class="java.beans.XMLDecoder">
+ <object class="com.wm.deployer.project.Project" id="Project0">
+  <void property="bundles">
+   <void method="add">
+    <object class="com.wm.deployer.project.Bundle" id="Bundle0">
+     <void property="name">
+      <string>myDeploymentSet</string>
+     </void>
+     <void property="project">
+      <object idref="Project0"/>
+     </void>
+     <void property="sourceSystems">
+      <void method="add">
+       <object class="com.wm.deployer.project.is.ISSourceSystem" id="ISSourceSystem0">
+        <void property="bundle">
+         <object idref="Bundle0"/>
+        </void>
+        <void property="name">
+         <string>local</string>
+        </void>
+        <void property="packages">
+         <void method="add">
+          <object class="com.wm.deployer.project.is.ISPackage" id="ISPackage0">
+           <void property="activateOnInstall">
+            <boolean>true</boolean>
+           </void>
+           <void property="adapterConnections">
+            <void method="add">
+             <string>jdbc_test:Oracle_12C</string>
+            </void>
+           </void>
+           <void property="adapterNotifications">
+            <void method="add">
+             <string>jdbc_test.adapters:I_NOTITEST</string>
+            </void>
+           </void>
+           <void property="adapterPollingNotifications">
+            <void method="add">
+             <string>jdbc_test.adapters:I_NOTITEST</string>
+            </void>
+           </void>
+           <void property="archiveName">
+            <string>TEST</string>
+           </void>
+           <void property="flowServices">
+            <void method="add">
+             <string>test:new_flowservice</string>
+            </void>
+           </void>
+           <void property="name">
+            <string>TEST</string>
+           </void>
+           <void property="pkgVersion">
+            <string>1.0</string>
+           </void>
+           <void property="refreshPropertiesDuringBuild">
+            <boolean>true</boolean>
+           </void>
+           <void property="requiredISVersion">
+            <string>10.3.0.0</string>
+           </void>
+           <void property="requiredJVMVersion">
+            <string>1.8.0_181</string>
+           </void>
+           <void property="requiredTargetPackageVersion">
+            <string>1.0</string>
+           </void>
+           <void property="sourceSystem">
+            <object idref="ISSourceSystem0"/>
+           </void>
+           <void property="synchronizeDocuments">
+            <boolean>true</boolean>
+           </void>
+           <void property="version">
+            <string>4.0</string>
+           </void>
+          </object>
+         </void>
+        </void>
+        <void property="version">
+         <string>4.0</string>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="version">
+      <string>4.0</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="deployTNRules">
+   <string>MERGE</string>
+  </void>
+  <void property="description">
+   <string>xg</string>
+  </void>
+  <void property="name">
+   <string>gd</string>
+  </void>
+  <void property="version">
+   <string>4.0</string>
+  </void>
+ </object>
+</java>

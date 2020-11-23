@@ -1,0 +1,9 @@
+2020-07-06 13:45:47 KST Initiating Progress Report for the Build operation
+2020-07-06 13:45:47 KST Starting deployer build for project gd
+2020-07-06 13:45:47 KST  Processing deployment set myDeploymentSet
+2020-07-06 13:45:47 KST Processing IS source server PJA
+2020-07-06 13:45:47 KST Initiating add operation on package TEST to the build
+2020-07-06 13:45:47 KST Done with the add operation on package TEST to the build
+2020-07-06 13:45:48 KST Completed processing IS source server PJA
+2020-07-06 13:45:48 KST Completed Processing Of deployment set myDeploymentSet
+2020-07-06 13:45:48 KST Completed generating Progress Report for the Build operation.

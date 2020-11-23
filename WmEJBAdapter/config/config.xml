@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="iso-8859-2" ?> 
+
+<ejbConfig debug="false">
+	
+	<appServer providerURL="*">
+	
+		<!-- 
+			Hint for restrictedJNDINames tag:
+
+			restrictedJNDINames is supposed to contain JNDI Names that are used by the Application Server Provider and 
+			they are not user defined.
+
+		-->
+
+		<restrictedJNDINames>
+			<jboss>
+				<jndiName/>
+			</jboss>
+			<weblogic>
+				<jndiName>weblogic.logging.DomainLogHandler</jndiName>
+				<jndiName>weblogic.transaction.TransactionSynchronizationRegistry</jndiName>
+				<jndiName>weblogic.transaction.TransactionManager</jndiName>
+				<jndiName>weblogic.transaction.UserTransaction</jndiName>
+				<jndiName>weblogic.transaction.coordinators.AdminServer</jndiName>
+				<jndiName>weblogic.wsee.cluster.ClusterDispatcher</jndiName>
+				<jndiName>weblogic.cluster.singleton.ServerMigrationCoordinator </jndiName>
+				<jndiName>weblogic.cluster.migration.migratableServiceCoordinator</jndiName>
+				<jndiName>weblogic.jms</jndiName>
+				<jndiName>weblogic.cosnaming.NameService</jndiName>
+				<jndiName>weblogic.common.T3Services</jndiName>
+				<jndiName>weblogic.management.home.AdminServer</jndiName>
+				<jndiName>weblogic.management.home.localhome</jndiName>
+				<jndiName>weblogic.management.adminhome</jndiName>
+				<jndiName>weblogic.management.server</jndiName>
+				<jndiName>weblogic.cluster.migration.migratableServiceCoordinator</jndiName>
+				<jndiName>javax</jndiName>
+			</weblogic>
+			<websphere>
+				<jndiName/>
+			</websphere>
+		</restrictedJNDINames>
+
+		<!-- 
+
+		     Hint for jndiTreeSearchOption tag:
+
+		     Set contextSearch to "true" if you want to use JNDI Context Search Criteria. Otherwise set contextSearch to "false". 
+
+		     Set nameSearch to "true" if you want to use JNDI Name Search Criteria. Otherwise set nameSearch to "false". 
+		-->
+
+		<jndiTreeSearchOption>
+			<contextSearch>true</contextSearch>
+			<nameSearch>true</nameSearch>
+		</jndiTreeSearchOption>
+
+
+		<!-- 
+
+		     Hint for jndiContexts tag:
+
+		     Add JNDI Contexts that will be searched during lookup.
+
+
+		     Example: 
+
+			<jndiContexts>
+				<jndiContext>thisNode/servers/server1/WSsamples</jndiContext>
+			</jndiContexts> 
+			
+			
+
+		-->
+
+
+		<jndiContexts>
+			<jndiContext/>
+		</jndiContexts>
+
+
+		<!-- 
+
+		     Hint for jndiNames tag:
+
+		     Add JNDI Names that will be searched during lookup.
+
+
+		     Example: 
+
+			<jndiNames>
+				<jndiName>ejb20-containerManaged-AccountHome</jndiName>
+			</jndiNames>     
+
+		-->
+
+
+		<jndiNames>
+			<jndiName/>
+		</jndiNames>   
+
+
+		<!-- 
+
+		     Hint for ejbClientJars tag:
+
+		     Names of only client Jars to be added and these jars must exist in \\WmEJBAdapter\code\jars 
+		     Directory 
+
+
+		     Example: 
+
+			<ejbClientJars>
+				<jarFileName>domain.jar</jarFileName>
+				<jarFileName>C:/testDir/jbStateful.jar</jarFileName>
+			</ejbClientJars>	     
+
+		-->
+
+		<ejbClientJars>
+			<jarFileName/>
+		</ejbClientJars>
+	
+	</appServer>
+
+
+	
+</ejbConfig>

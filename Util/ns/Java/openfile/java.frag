@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">openfile</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">DQovLyBwaXBlbGluZQ0KSURhdGFDdXJzb3IgcGlwZWxpbmVDdXJzb3IgPSBwaXBlbGluZS5nZXRD
+dXJzb3IoKTsNCglTdHJpbmcJdXJsID0gSURhdGFVdGlsLmdldFN0cmluZyggcGlwZWxpbmVDdXJz
+b3IsICJ1cmwiICk7DQpwaXBlbGluZUN1cnNvci5kZXN0cm95KCk7DQpGaWxlSW5wdXRTdHJlYW0g
+Zj1udWxsOw0KDQp0cnkgew0KCWYgPSBuZXcgRmlsZUlucHV0U3RyZWFtKHVybCk7DQoNCn0gY2F0
+Y2ggKEZpbGVOb3RGb3VuZEV4Y2VwdGlvbiBlKSB7DQoJLy8gVE9ETyBBdXRvLWdlbmVyYXRlZCBj
+YXRjaCBibG9jaw0KCWUucHJpbnRTdGFja1RyYWNlKCk7DQp9DQoNCi8vIHBpcGVsaW5lDQpJRGF0
+YUN1cnNvciBwaXBlbGluZUN1cnNvcl8xID0gcGlwZWxpbmUuZ2V0Q3Vyc29yKCk7DQpPYmplY3Qg
+c3RyZWFtID0gbmV3IE9iamVjdCgpOw0KSURhdGFVdGlsLnB1dCggcGlwZWxpbmVDdXJzb3JfMSwg
+InN0cmVhbSIsIGYgKTsNCnBpcGVsaW5lQ3Vyc29yXzEuZGVzdHJveSgpOw0K</value>
+</Values>

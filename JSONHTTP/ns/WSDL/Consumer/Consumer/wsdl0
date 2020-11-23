@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="new_wsd" targetNamespace="http://DESKTOP-5LMPR87/WSDL.Provider:new_wsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://DESKTOP-5LMPR87/WSDL.Provider:new_wsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://DESKTOP-5LMPR87/WSDL.Provider:new_wsd" xmlns:tns="http://DESKTOP-5LMPR87/WSDL.Provider:new_wsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <xsd:element name="JsonTestServiceP" type="tns:JsonTestServiceP"/>
+          <xsd:element name="JsonTestServicePResponse" type="tns:JsonTestServicePResponse"/>
+          <xsd:complexType name="JsonTestServiceP">
+            <xsd:sequence>
+              <xsd:element name="JsonString" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="JsonTestServicePResponse">
+            <xsd:sequence>
+              <xsd:element name="Car" nillable="true" type="tns:Car"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="Car">
+            <xsd:sequence>
+              <xsd:element name="make" nillable="true" type="xsd:string"/>
+              <xsd:element name="color" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="new_wsd_PortType_JsonTestServiceP">
+    <wsdl:part name="parameters" element="tns:JsonTestServiceP">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="new_wsd_PortType_JsonTestServicePResponse">
+    <wsdl:part name="parameters" element="tns:JsonTestServicePResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="new_wsd_PortType">
+    <wsdl:operation name="JsonTestServiceP">
+      <wsdl:input message="tns:new_wsd_PortType_JsonTestServiceP">
+    </wsdl:input>
+      <wsdl:output message="tns:new_wsd_PortType_JsonTestServicePResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSDL_Provider_new_wsd_Binder" type="tns:new_wsd_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="JsonTestServiceP">
+      <soap:operation soapAction="WSDL_Provider_new_wsd_Binder_JsonTestServiceP" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSDL.Provider.new_wsd">
+    <wsdl:port name="WSDL_Provider_new_wsd_Port" binding="tns:WSDL_Provider_new_wsd_Binder">
+      <soap:address location="http://DESKTOP-5LMPR87:5555/ws/WSDL.Provider:new_wsd/WSDL_Provider_new_wsd_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="encodeutf8">true</value>
+  <array name="imports" type="value" depth="1">
+    <value>com.wm.adapter.wmejb.WmEJBAdapter</value>
+    <value>com.wm.adk.WmAdapter</value>
+    <value>com.wm.adk.log.ARTLogger</value>
+    <value>com.wm.adk.i18n.AdapterResourceBundleManager</value>
+    <value>javax.ejb.EJBObject</value>
+    <value>javax.ejb.Handle</value>
+    <value>javax.rmi.PortableRemoteObject</value>
+  </array>
+</Values>
+

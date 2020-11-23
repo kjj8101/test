@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="svc_type">AdapterService</value>
+  <value name="svc_sigtype">unknown</value>
+  <record name="svc_sig" javaclass="com.wm.util.Values">
+    <record name="sig_in" javaclass="com.wm.util.Values">
+      <value name="node_type">record</value>
+      <value name="node_subtype">unknown</value>
+      <value name="is_public">false</value>
+      <value name="field_type">record</value>
+      <value name="field_dim">0</value>
+      <value name="nillable">true</value>
+      <value name="form_qualified">false</value>
+      <value name="is_global">false</value>
+      <array name="rec_fields" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">record</value>
+          <value name="node_subtype">unknown</value>
+          <value name="is_public">false</value>
+          <value name="field_name">new_adapterService_2Input</value>
+          <value name="field_type">record</value>
+          <value name="field_dim">0</value>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+          <array name="rec_fields" type="record" depth="1">
+          </array>
+          <value name="modifiable">true</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">record</value>
+          <value name="node_subtype">unknown</value>
+          <value name="is_public">false</value>
+          <value name="field_name">$connectionName</value>
+          <value name="field_type">string</value>
+          <value name="field_dim">0</value>
+          <value name="field_opt">true</value>
+          <value name="nillable">false</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+        </record>
+      </array>
+      <value name="modifiable">true</value>
+    </record>
+    <record name="sig_out" javaclass="com.wm.util.Values">
+      <value name="node_type">record</value>
+      <value name="node_subtype">unknown</value>
+      <value name="is_public">false</value>
+      <value name="field_type">record</value>
+      <value name="field_dim">0</value>
+      <value name="nillable">true</value>
+      <value name="form_qualified">false</value>
+      <value name="is_global">false</value>
+      <array name="rec_fields" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">record</value>
+          <value name="node_subtype">unknown</value>
+          <value name="is_public">false</value>
+          <value name="field_name">new_adapterService_2Output</value>
+          <value name="field_type">record</value>
+          <value name="field_dim">0</value>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+          <array name="rec_fields" type="record" depth="1">
+          </array>
+          <value name="modifiable">true</value>
+        </record>
+      </array>
+      <value name="modifiable">true</value>
+    </record>
+  </record>
+  <value name="stateless">yes</value>
+  <value name="caching">no</value>
+  <value name="prefetch">no</value>
+  <value name="cache_ttl">15</value>
+  <value name="prefetch_level">1</value>
+  <value name="audit_level">off</value>
+  <value name="check_internal_acls">no</value>
+  <value name="icontext_policy">$null</value>
+  <value name="system_service">no</value>
+  <value name="retry_max">0</value>
+  <value name="retry_interval">0</value>
+  <value name="svc_in_validator_options">none</value>
+  <value name="svc_out_validator_options">none</value>
+  <value name="auditoption">0</value>
+  <null name="auditfields_input"/>
+  <null name="auditfields_output"/>
+  <record name="auditsettings" javaclass="com.wm.util.Values">
+    <value name="document_data">0</value>
+    <value name="startExecution">false</value>
+    <value name="stopExecution">false</value>
+    <value name="onError">true</value>
+  </record>
+  <array name="allowedHTTPMethods" type="value" depth="1">
+    <value>HEAD</value>
+    <value>DELETE</value>
+    <value>POST</value>
+    <value>GET</value>
+    <value>OPTIONS</value>
+    <value>PUT</value>
+    <value>PATCH</value>
+  </array>
+  <value name="pipeline_option">0</value>
+  <null name="originURI"/>
+  <value name="modifiable">true</value>
+  <value name="is_public">false</value>
+  <value name="node_type">service</value>
+  <value name="IRTNODE_VERSION">1</value>
+  <value name="IRTNODE_PROPERTY">CwQAAAABBQEEGQBjAG8AbQAuAHcAbQAuAGQAYQB0AGEALgBJAFMATQBlAG0ARABhAHQAYQBJAG0AcABsBBMAcwBlAHIAdgBpAGMAZQBUAGUAbQBwAGwAYQB0AGUATgBhAG0AZQQuAGMAbwBtAC4AdwBtAC4AYQBkAGEAcAB0AGUAcgAuAHcAbQBqAGQAYgBjAC4AcwBlAHIAdgBpAGMAZQBzAC4AUwB0AG8AcgBlAGQAUAByAG8AYwBlAGQAdQByAGUEDgBjAG8AbgBuAGUAYwB0AGkAbwBuAE4AYQBtAGUECwB0AGUAcwB0ADIAOgB0AGUAcwB0ADEEEgB0AGUAbQBwAGwAYQB0AGUAUAByAG8AcABlAHIAdABpAGUAcwUBAAIEFQBwAHIAbwBjAGUAZAB1AHIAZQAuAGMAYQB0AGEAbABvAGcATgBhAG0AZQQRADwAYwB1AHIAcgBlAG4AdAAgAGMAYQB0AGEAbABvAGcAPgQUAHAAcgBvAGMAZQBkAHUAcgBlAC4AcwBjAGgAZQBtAGEATgBhAG0AZQQQADwAYwB1AHIAcgBlAG4AdAAgAHMAYwBoAGUAbQBhAD4EFgBwAHIAbwBjAGUAZAB1AHIAZQAuAGEAdQB0AG8AUgBlAHQAcgBpAGUAdgBlBAUARgBBAEwAUwBFBBcAcAByAG8AYwBlAGQAdQByAGUALgBwAHIAbwBjAGUAZAB1AHIAZQBOAGEAbQBlBAAEGABwAHIAbwBjAGUAZAB1AHIAZQAuAGQAbwBMAG8AYwBhAGwAUAB1AGIAbABpAHMAaAQFAGYAYQBsAHMAZQQdAHAAcgBvAGMAZQBkAHUAcgBlAC4AcgBlAHQAdQByAG4ARgBpAGUAbABkAEoARABCAEMAVAB5AHAAZQoABBAAagBhAHYAYQAuAGwAYQBuAGcALgBTAHQAcgBpAG4AZwQZAHAAcgBvAGMAZQBkAHUAcgBlAC4AcgBlAHQAdQByAG4ARgBpAGUAbABkAE4AYQBtAGUKAAAWBBYAcAByAG8AYwBlAGQAdQByAGUALgBxAHUAZQByAHkAVABpAG0AZQBPAHUAdAQCAC0AMQQUAHAAYQByAGEAbQBzAC4AcABhAHIAYQBtAEoARABCAEMAVAB5AHAAZQoAABYEEABwAGEAcgBhAG0AcwAuAHAAYQByAGEAbQBOAGEAbQBlCgAAFgQVAHAAYQByAGEAbQBzAC4AcABhAHIAYQBtAEkAbgBPAHUAdABUAHkAcABlCgAAFgQRAHAAYQByAGEAbQBzAC4AZQB4AHAAcgBlAHMAcwBpAG8AbgoAABYEEQBwAGEAcgBhAG0AcwAuAGkAbgBwAHUAdABGAGkAZQBsAGQKAAAWBBkAcABhAHIAYQBtAHMALgBpAG4AcAB1AHQARgBpAGUAbABkAEoARABCAEMAVAB5AHAAZQoAABYEEABwAGEAcgBhAG0AcwAuAGkAbgBwAHUAdABUAHkAcABlCgAAFgQRAHAAYQByAGEAbQBzAC4AaQBuAHAAdQB0AEkAbgBkAGUAeAoAABYEEABwAGEAcgBhAG0AcwAuAGkAbgBwAHUAdABOAGEAbQBlCgAAFgQSAHAAYQByAGEAbQBzAC4AbwB1AHQAcAB1AHQARgBpAGUAbABkCgAAFgQaAHAAYQByAGEAbQBzAC4AbwB1AHQAcAB1AHQARgBpAGUAbABkAEoARABCAEMAVAB5AHAAZQoAABYEEQBwAGEAcgBhAG0AcwAuAG8AdQB0AHAAdQB0AFQAeQBwAGUKAAAWBBIAcABhAHIAYQBtAHMALgBvAHUAdABwAHUAdABJAG4AZABlAHgKAAAWBBEAcABhAHIAYQBtAHMALgBvAHUAdABwAHUAdABOAGEAbQBlCgAAFgQWAHIAZQBzAHUAbAB0AHMALgByAGUAcwB1AGwAdABTAGUAdABJAG4AZABlAHgKAAAWBBUAcgBlAHMAdQBsAHQAcwAuAHIAZQBzAHUAbAB0AFMAZQB0AE4AYQBtAGUKAAAWBBkAcgBlAHMAdQBsAHQAcwAuAG8AcgBhAFIAZQBmAEMAdQByAHMAbwByAEkAbgBkAGUAeAoAABYEGAByAGUAcwB1AGwAdABzAC4AbwByAGEAUgBlAGYAQwB1AHIAcwBvAHIATgBhAG0AZQoAABYEHAByAGUAcwB1AGwAdABzAC4AbwByAGEAUgBlAGYAQwB1AHIAcwBvAHIASgBEAEIAQwBUAHkAcABlCgAAFgQcAHIAZQBzAHUAbAB0AHMALgBvAHIAYQBSAGUAZgBDAHUAcgBzAG8AcgBKAEEAVgBBAFQAeQBwAGUKAAAWBBIAcgBlAHMAdQBsAHQAcwAuAHIAZQBzAHUAbAB0AE4AYQBtAGUKAAAWBBIAcgBlAHMAdQBsAHQAcwAuAGMAbwBsAHUAbQBuAE4AYQBtAGUKAAAWBBYAcgBlAHMAdQBsAHQAcwAuAGMAbwBsAHUAbQBuAEoARABCAEMAVAB5AHAAZQoAABYEFgByAGUAcwB1AGwAdABzAC4AYwBvAGwAdQBtAG4ASgBBAFYAQQBUAHkAcABlCgAAFgQTAHIAZQBzAHUAbAB0AHMALgBvAHUAdABwAHUAdABGAGkAZQBsAGQKAAAWBBIAcgBlAHMAdQBsAHQAcwAuAG8AdQB0AHAAdQB0AE4AYQBtAGUKAAAWBBIAcgBlAHMAdQBsAHQAcwAuAG8AdQB0AHAAdQB0AFQAeQBwAGUKAAAWBAYAdQBzAGUAcgBpAGQEGwBvAHYAZQByAHIAaQBkAGUAQwByAGUAZABlAG4AdABpAGEAbABzAC4AJABkAGIAVQBzAGUAcgQKAHUAcwBlAHIAaQBkAFQAeQBwAGUAFgQPAGkAbgBwAHUAdABVAHMAZQByAGkAZABTAGkAZwBuAG4ECABwAGEAcwBzAHcAbwByAGQEHwBvAHYAZQByAHIAaQBkAGUAQwByAGUAZABlAG4AdABpAGEAbABzAC4AJABkAGIAUABhAHMAcwB3AG8AcgBkBAwAcABhAHMAcwB3AG8AcgBkAFQAeQBwAGUAFgQRAGkAbgBwAHUAdABQAGEAcwBzAHcAbwByAGQAUwBpAGcAbgB0BBAAZABlAHMAaQBnAG4AVABpAG0AZQBMAG8AYwBhAGwAZQQFAGsAbwBfAEsAUgIABBkAYQBkAGEAcAB0AGUAcgBTAGUAcgB2AGkAYwBlAE4AbwBkAGUAVgBlAHIAcwBpAG8AbgsEAAAAAgQLAGEAZABhAHAAdABlAHIAVAB5AHAAZQQLAEoARABCAEMAQQBkAGEAcAB0AGUAcgQPAGkAbgBwAHUAdABSAGUAYwBvAHIAZABOAGEAbQBlBBkAbgBlAHcAXwBhAGQAYQBwAHQAZQByAFMAZQByAHYAaQBjAGUAXwAyAEkAbgBwAHUAdAQQAG8AdQB0AHAAdQB0AFIAZQBjAG8AcgBkAE4AYQBtAGUEGgBuAGUAdwBfAGEAZABhAHAAdABlAHIAUwBlAHIAdgBpAGMAZQBfADIATwB1AHQAcAB1AHQCAA==</value>
+</Values>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="record" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="node_nsName">WSDL.Consumer.Consumer_.docTypes:docTypeRef_tns_JsonTestServicePResponse</value>
+    <value name="node_pkg">JSONHTTP</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <value name="schemaDomain">b879759673c14e34b5580fe01458f757</value>
+    <value name="docTypeDomain">31a9635a7e914482aa8cfc4fab3af5c9</value>
+    <value name="originURI">http://DESKTOP-5LMPR87:5555/ws/WSDL.Provider:new_wsd?WSDL</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">Car</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">WSDL.Consumer.Consumer_.docTypes:docTypeRef_tns_Car</value>
+      </record>
+    </array>
+    <record name="schemaType" javaclass="com.wm.util.Values">
+      <value name="xmlns">http://DESKTOP-5LMPR87/WSDL.Provider:new_wsd</value>
+      <value name="ncName">JsonTestServicePResponse</value>
+    </record>
+    <value name="schemaRegistered">true</value>
+    <value name="modifiable">false</value>
+  </record>
+</Values>

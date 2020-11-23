@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">getDef</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">Ly8gcGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxpbmUuZ2V0Q3Vy
+c29yKCk7DQpTdHJpbmcJbnNuYW1lID0gSURhdGFVdGlsLmdldFN0cmluZyggcGlwZWxpbmVDdXJz
+b3IsICJuc25hbWUiICk7DQpwaXBlbGluZUN1cnNvci5kZXN0cm95KCk7DQoNCk9iamVjdCBub2Rl
+RGVmID0gTmFtZXNwYWNlLmN1cnJlbnQoKS5nZXRTZXJ2aWNlKE5TTmFtZS5jcmVhdGUobnNuYW1l
+KSk7DQpKYXZhU2VydmljZSBqYXZhU3ZjID0gKEphdmFTZXJ2aWNlKW5vZGVEZWY7DQoNCg0KcGlw
+ZWxpbmVDdXJzb3IgPSBwaXBlbGluZS5nZXRDdXJzb3IoKTsNCklEYXRhVXRpbC5wdXQocGlwZWxp
+bmVDdXJzb3IsICJkZWZUeXBlIiwgbm9kZURlZi5nZXRDbGFzcygpLmdldENhbm9uaWNhbE5hbWUo
+KSk7DQpJRGF0YVV0aWwucHV0KHBpcGVsaW5lQ3Vyc29yLCAibm9kZVZhbHVlcyIsIGphdmFTdmMu
+Z2V0Tm9kZVZhbHVlcygpKTsgDQpJRGF0YVV0aWwucHV0KHBpcGVsaW5lQ3Vyc29yLCAiZGVmIiwg
+bm9kZURlZik7IA0KDQpwaXBlbGluZUN1cnNvci5kZXN0cm95KCk7DQoJ</value>
+</Values>
